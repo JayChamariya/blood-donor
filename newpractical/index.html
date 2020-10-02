@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blood Donation Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="form-box">
+      <header>
+        <div class="heading">
+          <h1>Blood Donation Form</h1>
+        </div>
+      </header>
+      <form method="GET">
+        <label for="name" class="form-control-label">Donor Name</label><br />
+        <input
+          type="text"
+          placeholder="Enter Your Full Name"
+          class="form-control"
+          required
+        />
+        <label for="age" class="form-control-label">Age</label><br />
+        <input
+          type="number"
+          placeholder="Enter Your Age"
+          class="form-control"
+          required
+        />
+        
+        <label for="Blood-grp" class="form-control-label">Blood Group</label
+        ><br />
+        <div class="dot">
+        <input type="radio" class="form-control" name="bld-grp" />A
+        <input type="radio" class="form-control" name="bld-grp" />B
+        <input type="radio" class="form-control" name="bld-grp" />AB
+        <input type="radio" class="form-control" name="bld-grp" />O
+        </div>
+        
+        <label for="disease" class="form-control-label">Any Disease:</label><br />
+        <div class="dot">
+        <select name="disease" id="disease" required>
+          <option value="no-disease">No Disease</option>
+          <option value="cardiac">Cardiac Disease</option>
+          <option value="Cancer">Cancer</option>
+          <option value="lung">Severe Lung Disease</option>
+          <option value="hiv">HIV Infection</option>
+          <option value="hepatitis">Hepatitis B and C</option>
+        </select>
+        </div>
+        
+        <label for="others">Any other disease:</label><br />
+        <textarea
+          name="others"
+          cols="30"
+          rows="
+        4"
+          placeholder="Enter if you have any other disease(optional)"
+        ></textarea>
+    
+        <label for="address">Address:</label><br />
+        <textarea
+          name="address"
+          cols="30"
+          rows="
+        4"
+          placeholder="Enter your address"
+          required
+        ></textarea>
+    
+        <label for="email">Email ID:</label><br />
+        <input
+          type="email"
+          placeholder="Enter your email id"
+          id="email"
+          name="email"
+          pattern=".+@gmail.com"
+          required
+        />
+    
+        <label for="contact">Contact No:</label><br />
+        <input
+          type="tel"
+          placeholder="Enter your contact no."
+          name="mobile"
+          pattern="[0-9]{10}"
+          required
+        />
+        <input type="submit" value="Submit" />
+        <input type="reset" />
+      </form>
+    </div>
+  </body>
+</html>
